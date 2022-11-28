@@ -44,18 +44,18 @@ MAE 804.9409381511028,
 
 ## Regression Tree Model
 
-MAE 1044.290584702018,
- MSE 2248752.903184245,
- RMSE: 1499.584243443577,
- R^2: 0.18493243379615865 
+MAE 738.3173097797824,
+ MSE 1118185.973077762,
+ RMSE: 1057.4431299496734,
+ R^2: 0.5947099753159972 
 
 ## Recommendations:
 
-More Models
+Run a Random Forest model, this would feed the model more data, which I think would increase accuracy.
 
 ## Limitations & Next Steps
 
-Hypertune both models to acheive less error.
+Not enough correlation between data and target. I would recommend running a Random Forest Model.
 
 ### For further information
 
