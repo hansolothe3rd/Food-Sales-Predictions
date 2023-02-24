@@ -44,7 +44,7 @@ MAE 804.9409381511028,
  
 ### Coefficients 
 
-![image](http://localhost:8892/view/LinearRegression.png)
+![image](LinearRegression.png)
 - The Outlet Location Type, Tier 1,2,and 3, appear to have the largest effect on our target(Item_Outlet_Sales).
 
 ## Regression Tree Model
@@ -56,7 +56,7 @@ MAE 738.3173097797824,
  
 ### Importances
 
-![image](http://localhost:8892/view/dec_tree.png)
+![image](dec_tree.png)
 - Using the DecisionTreeRegressor model, we found that these top 5 features were of the most importance in making the model.
 
 ## Recommendations:
