@@ -47,6 +47,7 @@ MAE 804.9409381511028,
 ![image](LinearRegression.png)
 - The Outlet Location Type, Tier 1,2,and 3, appear to have the largest effect on our target(Item_Outlet_Sales).
 
+
 ## Regression Tree Model
 
 MAE 738.3173097797824,
@@ -58,6 +59,18 @@ MAE 738.3173097797824,
 
 ![image](dec_tree.png)
 - Using the DecisionTreeRegressor model, we found that these top 5 features were of the most importance in making the model.
+
+### Summary Plot - Bar Version
+
+![image](dec_tree_shap_bar.png)
+The two graphs appear to be the same. No decernable differerences.
+
+### Summary Plot - Dot Version
+
+![image](dec_tree_shap_dot.png)
+- Item_MRP seems to be spread pretty evenly, in other words, this feature affects the target positively and negatively, and heavily since it's the top impactor.
+- Outlet_Type_Grocery Store feature is much less likely to predict a fail.
+- Outlet_Type_Supermarket Type3 is more likely to fail.
 
 ## Recommendations:
 
