@@ -72,6 +72,22 @@ The two graphs appear to be the same. No decernable differerences.
 - Outlet_Type_Grocery Store feature is much less likely to predict a fail.
 - Outlet_Type_Supermarket Type3 is more likely to fail.
 
+### Local Explanations
+
+- I chose to go with the highest and lowest sales, to be able to see the contrast as to what features help the model make the decisions.
+
+![image](low_sales_force_plot.png)
+- The low_sales_force_plot shows that there are no positive features, and at least two features that are affecting this store negatively.  
+
+![image](low_sales_lime.png)
+- The low_sales_lime_explanation, shows no positive features; and the Outlet_Type_Grocery Store, Item_MRP, Outlet_Type_Supermarket Type3, are greatly affecting this store negatively.	
+
+![image](high_sales_force_plot.png)
+- The high_sales_force_plot is showing that Outlet_Type_Grocery, Item_MRP, are greatly pushing this store into the positive.
+
+![image](high_sales_lime.png)
+- The high_sales_lime_explanation is showing once again that Outlet_Type_Grocery, Item_MRP, are the main features that can swing the sales numbers of a specific store.
+
 ## Recommendations:
 
 Run a Random Forest model, this would feed the model more data, which I think would increase accuracy.
