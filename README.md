@@ -37,28 +37,37 @@ graph, we get a real picture of what type of stores and what type of location pr
 
 ## Linear Regression Model
 
-MAE 804.9409381511028,
- MSE 1194416.6540692842,
- RMSE: 1092.8937066656044,
- R^2: 0.5670799251055714 
+Training Data:	R^2= 0.56	RMSE= 1139.10
+Test Data:	R^2= 0.57	RMSE= 1092.86
  
 ### Coefficients 
 
 ![image](LinearRegression.png)
-- The Outlet Location Type, Tier 1,2,and 3, appear to have the largest effect on our target(Item_Outlet_Sales).
 
+- Outlet_Type_Supermarket Type3 - The presence of supermarkets of type 3 has the biggest positive impact on sales of products.
+
+- Outlet_Size_Large - The larger the outlet, the higher the sales of products. This may be because larger outlets typically offer more product options for customers.
+
+- Outlet_Type_Grocery Store - Grocery store outlet types have a negative impact on sales compared to other types of outlets. This could be due to a limited selection of products or other factors such as location or marketing strategies that are less effective for grocery stores.
 
 ## Regression Tree Model
 
-MAE 738.3173097797824,
- MSE 1118185.973077762,
- RMSE: 1057.4431299496734,
- R^2: 0.5947099753159972 
+Training Data:	R^2= 0.94	RMSE= 428.11
+Test Data:	R^2= 0.55	RMSE= 1120.33 
  
 ### Importances
 
-![image](dec_tree.png)
-- Using the DecisionTreeRegressor model, we found that these top 5 features were of the most importance in making the model.
+![image](RandomForestRegressor.png)
+
+- Item_MRP: This is the most important feature, which means the price of the item has the strongest impact on sales. A higher price may result in higher sales if the product is perceived as high-quality.
+
+- Outlet_Type_Grocery Store: This feature has a positive impact on sales, which means that having a grocery store outlet type is correlated with higher sales. This could be due to various factors like location or product selection that are more effective for grocery stores.
+
+- Item_Visibility: The visibility of the item on the shelves is another important factor affecting sales. Higher visibility may result in more purchases as customers are more likely to notice the product.
+
+- Outlet_Type_Supermarket Type3: This feature has a positive impact on sales, indicating that supermarket type 3 has a higher impact on sales compared to other types of outlets. Supermarket type 3 may have a larger selection of products or other factors that lead to more sales.
+
+- Item_Weight: The weight of the item also affects sales, but to a lesser extent than the other features. This could be due to various factors like customer preferences or perceived value based on weight.
 
 ### Summary Plot - Bar Version
 
