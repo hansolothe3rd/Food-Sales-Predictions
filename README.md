@@ -71,30 +71,34 @@ Test Data:	R^2= 0.55	RMSE= 1120.33
 
 ### Summary Plot - Bar Version
 
-![image](dec_tree_shap_bar.png)
-The two graphs appear to be the same. No decernable differerences.
+![Bar Version](images/summary_plot_reg_shap.png)
+
+- Both show Item_MRP as being the most important feature.
+- Outlet_Type_Grocery Store is also coming in as a strong second for both graphs.
+- Our original graph shows Item_Visibility in third place, but the shap graph shows us Outlet_Type_Supermarket Type3 in third.
 
 ### Summary Plot - Dot Version
 
-![image](dec_tree_shap_dot.png)
-- Item_MRP seems to be spread pretty evenly, in other words, this feature affects the target positively and negatively, and heavily since it's the top impactor.
-- Outlet_Type_Grocery Store feature is much less likely to predict a fail.
-- Outlet_Type_Supermarket Type3 is more likely to fail.
+![Dot Version](images/summary_plot_reg_shap_dot.png)
+
+- The higher the Item_MRP, the higher the Shap value
+- If it is a Outlet_Type_Grocery Store, then it's will have a lower shap value.
+- If it is a Outlet_Type_Supermarket Type3 then it is going to positively affect the shap value.
 
 ### Local Explanations
 
 - I chose to go with the highest and lowest sales, to be able to see the contrast as to what features help the model make the decisions.
 
-![image](low_sales_force_plot.png)
+![image](images/low_sales_force_plot.png)
 - The low_sales_force_plot shows that there are no positive features, and at least two features that are affecting this store negatively.  
 
-![image](low_sales_lime.png)
+![image](images/low_sales_lime.png)
 - The low_sales_lime_explanation, shows no positive features; and the Outlet_Type_Grocery Store, Item_MRP, Outlet_Type_Supermarket Type3, are greatly affecting this store negatively.	
 
-![image](high_sales_force_plot.png)
+![image](images/high_sales_force_plot.png)
 - The high_sales_force_plot is showing that Outlet_Type_Grocery, Item_MRP, are greatly pushing this store into the positive.
 
-![image](high_sales_lime.png)
+![image](images/high_sales_lime.png)
 - The high_sales_lime_explanation is showing once again that Outlet_Type_Grocery, Item_MRP, are the main features that can swing the sales numbers of a specific store.
 
 ## Recommendations:
