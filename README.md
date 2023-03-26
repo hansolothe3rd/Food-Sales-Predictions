@@ -90,7 +90,7 @@ Test Data:	R^2= 0.55	RMSE= 1120.33
 - Item_MRP has been the top influencer through all graphs, so it would make sense to break it open and see what makes it tic.
 
 
-![image](/Users/danielbarella/Desktop/example_high_Item_MRP_LIME.png)
+![image](example_high_Item_MRP_LIME.png)
 
 - Outlet_Type_Supermarket Type3 is negative, but the most impactful.
 - Item_MRP really pushed this into the positive.
@@ -103,7 +103,7 @@ Test Data:	R^2= 0.55	RMSE= 1120.33
 
 - Outlet_Type_Grocery Store has been in the top 2 a lot, I wanted to see what was pushing it to have such a negative affect on the target
 
-![image](/Users/danielbarella/Desktop/example_Outlet_Type_Grocery_Store _yes_LIME.png)
+![image](example_Outlet_Type_Grocery_Store _yes_LIME.png)
 
 - Outlet_Type_Supermarket Type3 is the most infulencial, by being negative.
 - The second most infulential is Outlet_Type_Grocery Store being that this example is a one, pushes it far into the negative.
