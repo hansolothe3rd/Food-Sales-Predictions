@@ -87,19 +87,31 @@ Test Data:	R^2= 0.55	RMSE= 1120.33
 
 ### Local Explanations
 
-- I chose to go with the highest and lowest sales, to be able to see the contrast as to what features help the model make the decisions.
+- Item_MRP has been the top influencer through all graphs, so it would make sense to break it open and see what makes it tic.
 
-![image](images/low_sales_force_plot.png)
-- The low_sales_force_plot shows that there are no positive features, and at least two features that are affecting this store negatively.  
 
-![image](images/low_sales_lime.png)
-- The low_sales_lime_explanation, shows no positive features; and the Outlet_Type_Grocery Store, Item_MRP, Outlet_Type_Supermarket Type3, are greatly affecting this store negatively.	
+![image](/Users/danielbarella/Desktop/example_high_Item_MRP_LIME.png)
 
-![image](images/high_sales_force_plot.png)
-- The high_sales_force_plot is showing that Outlet_Type_Grocery, Item_MRP, are greatly pushing this store into the positive.
+- Outlet_Type_Supermarket Type3 is negative, but the most impactful.
+- Item_MRP really pushed this into the positive.
+- The fact that this is not a Outlet_Type_Grocery Store, also really helped it into the possitive. 
 
-![image](images/high_sales_lime.png)
-- The high_sales_lime_explanation is showing once again that Outlet_Type_Grocery, Item_MRP, are the main features that can swing the sales numbers of a specific store.
+![image](example_high_Item_MRP_force_plot.png)
+
+- You can see from this force plot that the forces of Item_MRP and Outlet_Type_Grocery Store are pushing this individual example way into the positive.
+
+
+- Outlet_Type_Grocery Store has been in the top 2 a lot, I wanted to see what was pushing it to have such a negative affect on the target
+
+![image](/Users/danielbarella/Desktop/example_Outlet_Type_Grocery_Store _yes_LIME.png)
+
+- Outlet_Type_Supermarket Type3 is the most infulencial, by being negative.
+- The second most infulential is Outlet_Type_Grocery Store being that this example is a one, pushes it far into the negative.
+- Item_MRP is the third most influential, and being a low number, pushed it negative.
+
+![image](example_Outlet_Type_Grocery_Store_yes_force_plot.png)
+
+- This force plot of an example shows that because this is a Outlet_Type_Grocery Store, and has low Item_MRP, that has pushed this far far into the negative.
 
 ## Recommendations:
 
